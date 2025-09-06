@@ -36,11 +36,6 @@
  
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>6.2.0</version>
-</dependency>
-<dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.11.0</version>
@@ -54,13 +49,14 @@
 <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.5.3</version> <!-- Use a recent, stable version -->
+        <version>3.5.3</version>
         <configuration>
             <suiteXmlFiles>
-                <suiteXmlFile>testng.xml</suiteXmlFile> <!-- Path to your TestNG suite file -->
+                <suiteXmlFile>testng.xml</suiteXmlFile> 
             </suiteXmlFiles>
-            <!-- Other configurations like parallel execution, groups, etc. -->
+            
         </configuration>
     </plugin></plugins>
 </build>
 </project>
+
