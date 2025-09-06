@@ -15,10 +15,10 @@ public class ExcelReader {
         Workbook workbook = new XSSFWorkbook(file);
         Sheet sheet = workbook.getSheet(sheetName);
         
-        // Get header row
+        //row header
         Row headerRow = sheet.getRow(0);
-        // Get data row (assuming row 1 has the data)
-        Row dataRow = sheet.getRow(1);
+        
+        Row dataRow = sheet.getRow(1); // row data
         
         for (int i = 0; i < headerRow.getLastCellNum(); i++) {
             String header = headerRow.getCell(i).getStringCellValue();
@@ -30,4 +30,5 @@ public class ExcelReader {
         file.close();
         return data;
     }
+
 }
