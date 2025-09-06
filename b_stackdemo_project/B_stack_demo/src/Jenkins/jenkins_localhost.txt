@@ -1,0 +1,58 @@
+Started by user sai bavesh vellampalli
+Running as SYSTEM
+Building in workspace C:\Users\saiba\.jenkins\workspace\b_stackdemo
+[b_stackdemo] $ cmd /c call C:\Users\saiba\AppData\Local\Temp\jenkins9470003614416623155.bat
+
+C:\Users\saiba\.jenkins\workspace\b_stackdemo>cd "C:\Users\saiba\git\saibavesh_Allprojects\saibavesh_Allprojects\B_stack_demo" 
+
+C:\Users\saiba\git\saibavesh_Allprojects\saibavesh_Allprojects\B_stack_demo>mvn clean test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< capstone_project:B_stack_demo >--------------------
+[INFO] Building B_stack_demo 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ B_stack_demo ---
+[INFO] Deleting C:\Users\saiba\git\saibavesh_Allprojects\saibavesh_Allprojects\B_stack_demo\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ B_stack_demo ---
+[INFO] skip non existing resourceDirectory C:\Users\saiba\git\saibavesh_Allprojects\saibavesh_Allprojects\B_stack_demo\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ B_stack_demo ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target\classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ B_stack_demo ---
+[INFO] skip non existing resourceDirectory C:\Users\saiba\git\saibavesh_Allprojects\saibavesh_Allprojects\B_stack_demo\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ B_stack_demo ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug target 1.8] to target\test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ B_stack_demo ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+User logged out.
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.58 s -- in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  53.351 s
+[INFO] Finished at: 2025-09-06T02:59:22+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
