@@ -10,7 +10,6 @@
   </properties>
   
   <dependencies>
-    <!-- Cucumber Core Dependencies -->
     <dependency>
         <groupId>io.cucumber</groupId>
         <artifactId>cucumber-java</artifactId>
@@ -30,7 +29,6 @@
         <version>${cucumber.version}</version>
     </dependency>
     
-    <!-- JUnit for Test Runner -->
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
@@ -38,14 +36,12 @@
         <scope>test</scope>
     </dependency>
     
-    <!-- Selenium WebDriver -->
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
         <version>${selenium.version}</version>
     </dependency>
     
-    <!-- Apache POI for Excel (if needed) -->
     <dependency>
         <groupId>org.apache.poi</groupId>
         <artifactId>poi</artifactId>
@@ -75,7 +71,6 @@
 
   <build>
     <plugins>
-        <!-- Maven Compiler Plugin -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -86,7 +81,6 @@
             </configuration>
         </plugin>
         
-        <!-- Maven Surefire Plugin - CRITICAL FOR CUCUMBER -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
@@ -102,4 +96,5 @@
         </plugin>
     </plugins>
   </build>
+
 </project>
