@@ -1,0 +1,182 @@
+Started by user sai bavesh vellampalli
+Running as SYSTEM
+Building in workspace C:\Users\saiba\.jenkins\workspace\b_stackdemo_cucumber
+[b_stackdemo_cucumber] $ cmd /c call C:\Users\saiba\AppData\Local\Temp\jenkins18236621500354773353.bat
+
+C:\Users\saiba\.jenkins\workspace\b_stackdemo_cucumber>cd "C:\Users\saiba\git\saibavesh_Allprojects\saibavesh_Allprojects\B-stack_demo_cucumber" 
+
+C:\Users\saiba\git\saibavesh_Allprojects\saibavesh_Allprojects\B-stack_demo_cucumber>mvn clean test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< B-stack_demo_cucumber:B-stack_demo_cucumber >-------------
+[INFO] Building B-stack_demo_cucumber 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ B-stack_demo_cucumber ---
+[INFO] Deleting C:\Users\saiba\git\saibavesh_Allprojects\saibavesh_Allprojects\B-stack_demo_cucumber\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ B-stack_demo_cucumber ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\saiba\git\saibavesh_Allprojects\saibavesh_Allprojects\B-stack_demo_cucumber\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ B-stack_demo_cucumber ---
+[INFO] Changes detected - recompiling the module! :source
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target\classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ B-stack_demo_cucumber ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 12 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ B-stack_demo_cucumber ---
+[INFO] Changes detected - recompiling the module! :dependency
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 15 source files with javac [debug target 1.8] to target\test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ B-stack_demo_cucumber ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running stepdefination.TestrunnerTest
+
+Scenario: User logs in with valid credentials    # src/test/resources/features/01_login.feature:2
+Sep 06, 2025 4:05:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:05:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is on the bstack demo page      # stepdefination.validlogin.the_user_is_on_the_bstack_demo_page()
+  When the user logs in with valid credentials   # stepdefination.validlogin.the_user_logs_in_with_valid_credentials()
+User logged in successfully
+  Then the user should be logged in successfully # stepdefination.validlogin.the_user_should_be_logged_in_successfully()
+
+Scenario: User adds product to favourites           # src/test/resources/features/02_favourites.feature:2
+Sep 06, 2025 4:05:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:05:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is logged in for favourites        # stepdefination.fav.user_is_logged_in_for_favourites()
+  When the user adds a product to favourites        # stepdefination.fav.user_adds_product_to_favourites()
+Product added to favourites successfully
+  Then the product should be in the favourites list # stepdefination.fav.product_should_be_in_the_favourites_list()
+
+Scenario: User checks available offers   # src/test/resources/features/03_offers.feature:2
+Sep 06, 2025 4:05:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:05:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is logged in for offers # stepdefination.offers.user_is_logged_in_for_offers()
+  When the user navigates to offers      # stepdefination.offers.user_navigates_to_offers()
+Offers displayed successfully
+  Then offers should be displayed        # stepdefination.offers.offers_should_be_displayed()
+
+Scenario: User searches for Apple products  # src/test/resources/features/04_search.feature:3
+Sep 06, 2025 4:05:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:05:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is logged in for search    # stepdefination.search.user_is_logged_in_for_search()
+  When the user searches for "Samsung"      # stepdefination.search.user_searches_for(java.lang.String)
+Search results displayed successfully
+  Then samsung products should be displayed # stepdefination.search.samsung_products_should_be_displayed()
+
+Scenario: User sorts products by lowest price       # src/test/resources/features/05_sort.feature:2
+Sep 06, 2025 4:05:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:05:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is logged in for sort              # stepdefination.sort.user_is_logged_in_for_sort()
+  When the user sorts products by lowest price      # stepdefination.sort.user_sorts_products_by_lowest_price()
+Products sorted successfully
+  Then products should be displayed in sorted order # stepdefination.sort.products_should_be_displayed_in_sorted_order()
+
+Scenario: User filters products by vendors                  # src/test/resources/features/06_vendors.feature:2
+Sep 06, 2025 4:05:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:05:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is logged in for vendors                   # stepdefination.vendors.the_user_is_logged_in_for_vendors()
+  When the user selects Google, Apple, Samsung, and OnePlus # stepdefination.vendors.the_user_selects_google_apple_samsung_and_one_plus()
+  And then deselects them                                   # stepdefination.vendors.then_deselects_them()
+  And selects OnePlus again                                 # stepdefination.vendors.selects_one_plus_again()
+Only OnePlus products are displayed
+  Then only OnePlus products should be displayed            # stepdefination.vendors.only_one_plus_products_should_be_displayed()
+
+Scenario: User adds products to the cart      # src/test/resources/features/07_addtocart.feature:2
+Sep 06, 2025 4:06:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:06:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is logged in for add to cart # stepdefination.addtocart.user_is_logged_in_for_add_to_cart()
+  When the user adds products to the cart     # stepdefination.addtocart.user_adds_products_to_the_cart()
+Products added to cart successfully
+  Then the products should appear in the cart # stepdefination.addtocart.the_products_should_appear_in_the_cart()
+
+Scenario: User removes products from the cart      # src/test/resources/features/08_removefromcart.feature:3
+Sep 06, 2025 4:06:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:06:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is logged in for remove from cart # stepdefination.removefromcart.user_is_logged_in_for_remove_from_cart()
+  Given the user adds a product to the cart        # stepdefination.removefromcart.user_adds_a_product_to_the_cart()
+  When the user removes products from the cart     # stepdefination.removefromcart.user_removes_products_from_the_cart()
+Cart is empty now
+  Then the cart should be empty                    # stepdefination.removefromcart.the_cart_should_be_empty()
+
+Scenario: User proceeds to checkout                 # src/test/resources/features/09_checkout.feature:2
+Sep 06, 2025 4:06:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:06:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is logged in for checkout          # stepdefination.checkout.user_is_logged_in_for_checkout()
+  When the user adds items and proceeds to checkout # stepdefination.checkout.the_user_adds_items_and_proceeds_to_checkout()
+Order placed successfully
+  Then the order should be placed successfully      # stepdefination.checkout.the_order_should_be_placed_successfully()
+
+Scenario: User opens the privacy policy          # src/test/resources/features/10_privacypolicy.feature:2
+Sep 06, 2025 4:06:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:06:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is logged in for privacy policy # stepdefination.privacypolicy.user_is_logged_in_for_privacy_policy()
+  When the user opens the privacy policy         # stepdefination.privacypolicy.the_user_opens_the_privacy_policy()
+Privacy policy displayed successfully
+  Then the privacy policy should be displayed    # stepdefination.privacypolicy.the_privacy_policy_should_be_displayed()
+
+Scenario: User logs out                           # src/test/resources/features/11_logout.feature:2
+Sep 06, 2025 4:06:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:06:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is logged in for logout          # stepdefination.logout.user_is_logged_in_for_logout()
+User logged out.
+  When the user logs out                          # stepdefination.logout.the_user_logs_out()
+User logged out successfully
+  Then the user should be logged out successfully # stepdefination.logout.the_user_should_be_logged_out_successfully()
+
+Scenario: User enters wrong credentials                       # src/test/resources/features/12_invalid_login.feature:2
+Sep 06, 2025 4:07:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 06, 2025 4:07:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  Given the user is on the bstack demo page for invalid login # stepdefination.invalidlogin.the_user_is_on_the_bstack_demo_page_invalid()
+  When the user tries to login with invalid credentials       # stepdefination.invalidlogin.the_user_tries_invalid_login()
+Error message displayed for invalid login
+  Then an error message should be shown                       # stepdefination.invalidlogin.an_error_message_should_be_shown()
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 133.6 s -- in stepdefination.TestrunnerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:18 min
+[INFO] Finished at: 2025-09-06T16:07:13+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
