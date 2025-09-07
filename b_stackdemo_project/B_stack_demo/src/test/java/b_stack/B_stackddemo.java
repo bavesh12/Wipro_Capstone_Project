@@ -106,6 +106,7 @@ public class B_stackddemo {
     @Test(priority = 11)
     public void userLogout() throws InterruptedException {
         stack.logout();
+        stack.invalidLogin();
         Thread.sleep(2000);
     }
 
@@ -116,3 +117,4 @@ public class B_stackddemo {
         }
     }
 }
+
