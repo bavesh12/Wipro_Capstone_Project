@@ -20,13 +20,12 @@ public class search {
     }
 
     @When("the user searches for {string}")
-    public void user_searches_for(String product) throws InterruptedException {
-        stack.search_product();
+    public void the_user_searches_for(String product) {
+        stack.search_product(product);
     }
 
-    @Then("samsung products should be displayed")
-    public void samsung_products_should_be_displayed() {
+    @Then("the results for {string} should be displayed")
+    public void the_results_for_should_be_displayed(String product) {
         System.out.println("Search results displayed successfully");
-        driver.quit();
     }
 }
