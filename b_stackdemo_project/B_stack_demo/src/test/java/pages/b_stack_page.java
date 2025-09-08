@@ -17,7 +17,6 @@ public class b_stack_page {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    // Utility: Safe click with JS fallback
     private void safeClick(By locator) {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
         try {
@@ -176,4 +175,5 @@ public class b_stack_page {
         }
     }
 }
+
 
