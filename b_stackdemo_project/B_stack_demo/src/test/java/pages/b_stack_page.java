@@ -103,10 +103,10 @@ public class b_stack_page {
         // Open cart
         safeClick(By.cssSelector("span[class='bag bag--float-cart-closed']"));
 
-        // Delete first item
+        //delete item
         safeClick(By.cssSelector("div[class='shelf-item__del']"));
 
-        // Try deleting a second item if present
+        // deletesecond item if present
         try {
             safeClick(By.cssSelector("div[class='shelf-item__del']"));
         } catch (Exception e) {
@@ -120,20 +120,19 @@ public class b_stack_page {
             String filePath = "src/test/resources/testdata/checkoutdata.xlsx";
             Map<String, String> testData = ExcelReader.getCheckoutData(filePath, "Sheet1");
             
-            // Extract data from map
+        
             String firstName = testData.get("firstName");
             String lastName = testData.get("lastName");
             String address = testData.get("address");
             String state = testData.get("state");
             String postalCode = testData.get("postalCode");
             
-            // Add fresh items before checkout
+            // Add items before checkout
             safeClick(By.xpath("//*[@id='__next']/div/div/main/div[1]/div[4]/label/span"));
             safeClick(By.xpath("//*[@id='21']/div[4]"));
             safeClick(By.xpath("//*[@id='22']/div[4]"));
             safeClick(By.cssSelector(".buy-btn"));
 
-            // Fill form with Excel data
             WebElement fname = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("firstNameInput")));
             fname.clear();
             fname.sendKeys(firstName);
@@ -177,3 +176,4 @@ public class b_stack_page {
         }
     }
 }
+
