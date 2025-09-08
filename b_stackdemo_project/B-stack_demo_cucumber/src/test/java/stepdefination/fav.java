@@ -20,7 +20,7 @@ public class fav{
     }
 
     @When("the user adds a product to favourites")
-    public void user_adds_product_to_favourites() {
+    public void user_adds_product_to_favourites() throws InterruptedException{
         stack.fav();
     }
 
@@ -30,3 +30,4 @@ public class fav{
         driver.quit();
     }
 }
+
