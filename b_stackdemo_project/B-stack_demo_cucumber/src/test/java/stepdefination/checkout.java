@@ -21,7 +21,6 @@ public class checkout {
 
     @When("the user adds items and proceeds to checkout {string} {string} {string} {string} {string}")
     public void checkouts(String firstname, String lastname, String address, String state, String postcode) {
-        // Simply call the page class method and pass the parameters
         stack.checkouts(firstname, lastname, address, state, postcode);
     }
 
@@ -31,3 +30,4 @@ public class checkout {
         driver.quit();
     }
 }
+
