@@ -46,8 +46,9 @@ public class b_stack_page {
         }
     }
 
-    public void fav() {
+    public void fav() throws InterruptedException {
         safeClick(By.xpath("//*[@id='__next']/div/div/main/div[1]/div[4]/label/span"));
+        Thread.sleep(1500);
         safeClick(By.xpath("//*[@id='21']/div[1]/button"));
         safeClick(By.id("favourites"));
     }
@@ -175,5 +176,6 @@ public class b_stack_page {
         }
     }
 }
+
 
 
