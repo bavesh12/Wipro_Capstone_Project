@@ -19,9 +19,10 @@ public class checkout {
         stack.login();
     }
 
-    @When("the user adds items and proceeds to checkout")
-    public void the_user_adds_items_and_proceeds_to_checkout() {
-        stack.checkout();
+    @When("the user adds items and proceeds to checkout {string} {string} {string} {string} {string}")
+    public void checkouts(String firstname, String lastname, String address, String state, String postcode) {
+        // Simply call the page class method and pass the parameters
+        stack.checkouts(firstname, lastname, address, state, postcode);
     }
 
     @Then("the order should be placed successfully")
